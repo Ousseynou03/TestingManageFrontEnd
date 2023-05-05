@@ -1,0 +1,90 @@
+.logo{
+    text-align: center;
+    padding: 2.6rem 1rem;
+    img{
+        width: 100px;
+    }
+}
+
+.mat-icon{
+    vertical-align: center;
+    margin-right: 1rem;
+    
+}
+
+.mat-divider{
+    border-top-width: 2px;
+    border-color: #0e57a1;;
+}
+
+.mat-list-item{
+    color: #94a3b8 !important;
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 4px;
+    ::ng-deep{
+        .mat-list-item-content{
+            border-radius: 5px;
+            margin: 0.8px;
+            &:hover{
+                background: #2c3344 !important;
+            }
+        }
+    }
+}
+
+.list-item-active{
+    color: #f2f5f7 !important;
+    ::ng-deep{
+        .mat-list-item-content{
+            margin: 0px;
+            background: #2c3344 !important;
+            &:hover{
+                background: #2c3344 !important;
+            }
+        }
+    }
+}
+
+.mat-subheader{
+    color: #818cf8;
+    font-size: 0.6rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.example-tree-invisible {
+    display: none;
+    color: white;
+    background-color: black;
+  }
+  
+  .example-tree ul,
+  .example-tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    list-style-type: none;
+  }
+  
+  /*
+   * This padding sets alignment of the nested nodes.
+   */
+  .example-tree .mat-nested-tree-node div[role=group] {
+    padding-left: 40px;
+    color: white;
+    background-color: black;
+    
+  }
+  
+  /*
+   * Padding for leaf nodes.
+   * Leaf nodes need to have padding so as to align with other non-leaf nodes
+   * under the same parent.
+   */
+  .example-tree div[role=group] > .mat-tree-node {
+    padding-left: 40px;
+    color: white;
+    background-color: black;
+    font-size: x-smaller;
+  }
