@@ -9,23 +9,23 @@ export class ReleaseService {
   constructor(private http: HttpClient) { }
 
   postRelease(data : any){
-    return this.http.post<any>("http://localhost:3000/releaseManager", data);
+    return this.http.post<any>("http://51.77.132.116:3001/releaseManager", data);
   }
 
   getAllRelease(){
-    return this.http.get<any>("http://localhost:3000/releaseManager");
+    return this.http.get<any>("http://51.77.132.116:3001/releaseManager");
   }
 
   putRelease(data : any, id : number){
-    return this.http.put<any>("http://localhost:3000/releaseManager/"+id, data);
+    return this.http.put<any>("http://51.77.132.116:3001/releaseManager/"+id, data);
   }
 
   getRelease(id : number){
-    return this.http.get<any>("http://localhost:3000/releaseManager/"+id);
+    return this.http.get<any>("http://51.77.132.116:3001/releaseManager/"+id);
   }
 
   deleteRelease(id : number){
-    return this.http.delete<any>("http://localhost:3000/releaseManager/"+id);
+    return this.http.delete<any>("http://51.77.132.116:3001/releaseManager/"+id);
   }
 
   identifiantRelease(){

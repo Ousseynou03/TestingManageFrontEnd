@@ -13,22 +13,22 @@ export class TesteurService {
   }
 
   postTesteur(data : any){
-    return this.http.post<any>("http://localhost:3000/testeurManager", data);
+    return this.http.post<any>("http://51.77.132.116:3001/testeurManager", data);
   }
 
   getTesteur(id:number){
-    return this.http.get<any>("http://localhost:3000/testeurManager/"+id);
+    return this.http.get<any>("http://51.77.132.116:3001/testeurManager/"+id);
   }
 
   getAllTesteur(){
-    return this.http.get<any>("http://localhost:3000/testeurManager");
+    return this.http.get<any>("http://51.77.132.116:3001/testeurManager");
   }
 
   putTesteur(data : any, id : number){
-    return this.http.put<any>("http://localhost:3000/testeurManager/"+id, data);
+    return this.http.put<any>("http://51.77.132.116:3001/testeurManager/"+id, data);
   }
 
   deleteTesteur(id : number){
-    return this.http.delete<any>("http://localhost:3000/testeurManager/"+id);
+    return this.http.delete<any>("http://51.77.132.116:3001/testeurManager/"+id);
   }
 }

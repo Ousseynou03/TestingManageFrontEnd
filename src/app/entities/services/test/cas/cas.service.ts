@@ -9,27 +9,27 @@ export class CasService {
   constructor(private http: HttpClient) { }
 
   postCasTest(data : any){
-    return this.http.post<any>("http://localhost:3000/casTestManager", data);
+    return this.http.post<any>("http://51.77.132.116:3001/casTestManager", data);
   }
 
   getAllCasTest(){
-    return this.http.get<any>("http://localhost:3000/casTestManager");
+    return this.http.get<any>("http://51.77.132.116:3001/casTestManager");
   }
 
   getCasTest(id : number){
-    return this.http.get<any>("http://localhost:3000/casTestManager/"+id);
+    return this.http.get<any>("http://51.77.132.116:3001/casTestManager/"+id);
   }
 
   putCasTest(data : any, id : number){
-    return this.http.put<any>("http://localhost:3000/casTestManager/"+id, data);
+    return this.http.put<any>("http://51.77.132.116:3001/casTestManager/"+id, data);
   }
 
   deleteCasTest(id : number){
-    return this.http.delete<any>("http://localhost:3000/casTestManager/"+id);
+    return this.http.delete<any>("http://51.77.132.116:3001/casTestManager/"+id);
   }
 
   getVisionCasTest(id: number){
-    return this.http.get<any>("http://localhost:3000/casTestManager/visionCasTest/"+id);
+    return this.http.get<any>("http://51.77.132.116:3001/casTestManager/visionCasTest/"+id);
   }
 
 }
